@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4812D099222B2362000970E7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812D098222B2362000970E7 /* Person.swift */; };
 		48D6A36F222AFA8E00DF1DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D6A36E222AFA8E00DF1DC3 /* AppDelegate.swift */; };
 		48D6A371222AFA8E00DF1DC3 /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D6A370222AFA8E00DF1DC3 /* SelectPersonVC.swift */; };
 		48D6A374222AFA8E00DF1DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D6A372222AFA8E00DF1DC3 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4812D098222B2362000970E7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		48D6A36B222AFA8E00DF1DC3 /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D6A36E222AFA8E00DF1DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48D6A370222AFA8E00DF1DC3 /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		48D6A38A222AFE7500DF1DC3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4812D098222B2362000970E7 /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4812D099222B2362000970E7 /* Person.swift in Sources */,
 				48D6A371222AFA8E00DF1DC3 /* SelectPersonVC.swift in Sources */,
 				48D6A38C222B036500DF1DC3 /* BlackBackgroundView.swift in Sources */,
 				48D6A36F222AFA8E00DF1DC3 /* AppDelegate.swift in Sources */,
