@@ -7,9 +7,30 @@
 //
 
 import Foundation
+import Alamofire
+import SwiftyJSON
 
 class PersonApi {
     
+    // Api request with Alamofire
+    func getRandomPerson(id: Int, completion: @escaping PersonResponseCompletion) {
+        
+        guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
+        
+        Alamofire.request(url).responseJSON { (response) in
+            if let error = response.result.error {
+                debugPrint(error.localizedDescription)
+                completion(nil)
+                return
+            }
+            
+            guard let json = response.result.value as? [String: Any] else { return completion(nil)}
+            let person = self.parsePersonManual(json: json)
+            completion(person)
+        }
+    }
+    
+    // Api request with Url Session
     func getRandomPersonUrlSession(id: Int, completion: @escaping PersonResponseCompletion) {
         
         guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
