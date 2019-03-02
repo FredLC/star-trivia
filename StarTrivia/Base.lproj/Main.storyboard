@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Starjout.ttf">
+            <string>StarJediOutline</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Select PersonVC-->
         <scene sceneID="tne-QT-ifu">
@@ -21,13 +26,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space1" translatesAutoresizingMaskIntoConstraints="NO" id="hgP-fD-3j3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Trivia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmX-00-xy1">
+                                <rect key="frame" x="20" y="108" width="374" height="80"/>
+                                <fontDescription key="fontDescription" name="StarJediOutline" family="Star Jedi Outline" pointSize="50"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="hgP-fD-3j3" secondAttribute="bottom" id="318-HL-EMn"/>
                             <constraint firstItem="hgP-fD-3j3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5nF-h1-qym"/>
+                            <constraint firstItem="vmX-00-xy1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Bw-kh-ttQ"/>
                             <constraint firstItem="hgP-fD-3j3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HUv-p3-3dB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hgP-fD-3j3" secondAttribute="trailing" id="Loh-c7-gWc"/>
+                            <constraint firstItem="vmX-00-xy1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iTE-jK-8Lm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vmX-00-xy1" secondAttribute="trailing" constant="20" id="oDb-Pv-bQW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
