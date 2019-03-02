@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class PersonApi {
     
-    // Api request with Alamofire and SwiftyJSON
+    // Api request with Alamofire and Codable
     func getRandomPerson(id: Int, completion: @escaping PersonResponseCompletion) {
         
         guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
@@ -25,9 +25,9 @@ class PersonApi {
             }
             
             guard let data = response.data else { return completion(nil)}
+            let jsonDecoder = JSONDecoder()
             do {
-                let json = try JSON(data: data)
-                let person = self.parsePerson(json: json)
+                let person = try jsonDecoder.decode(Person.self, from: data)
                 completion(person)
             } catch {
                 debugPrint(error.localizedDescription)
@@ -35,6 +35,30 @@ class PersonApi {
             }
         }
     }
+    
+    // Api request with Alamofire and SwiftyJSON
+//    func getRandomPerson(id: Int, completion: @escaping PersonResponseCompletion) {
+//
+//        guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
+//
+//        Alamofire.request(url).responseJSON { (response) in
+//            if let error = response.result.error {
+//                debugPrint(error.localizedDescription)
+//                completion(nil)
+//                return
+//            }
+//
+//            guard let data = response.data else { return completion(nil)}
+//            do {
+//                let json = try JSON(data: data)
+//                let person = self.parsePerson(json: json)
+//                completion(person)
+//            } catch {
+//                debugPrint(error.localizedDescription)
+//                completion(nil)
+//            }
+//        }
+//    }
     
     // Api request with Alamofire
 //    func getRandomPerson(id: Int, completion: @escaping PersonResponseCompletion) {
