@@ -121,8 +121,8 @@
 		48D6A388222AFE6C00DF1DC3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4811B0D3222C64E500F49633 /* HomeworldVC.swift */,
 				48D6A370222AFA8E00DF1DC3 /* SelectPersonVC.swift */,
+				4811B0D3222C64E500F49633 /* HomeworldVC.swift */,
 				4811B0D5222C64F900F49633 /* VehiclesVC.swift */,
 				4811B0D7222C650400F49633 /* StarshipsVC.swift */,
 				4811B0D9222C650F00F49633 /* FilmsVC.swift */,

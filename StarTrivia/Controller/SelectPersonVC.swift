@@ -23,6 +23,7 @@ class SelectPersonVC: UIViewController {
     
     
     var personApi = PersonApi()
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,23 +48,50 @@ class SelectPersonVC: UIViewController {
         personApi.getRandomPerson(id: random) { (person) in
             if let person = person {
                self.setupView(person: person)
+               self.person = person
             }
         }
     }
     
-    
-    @IBAction func homeworldButtonPressed(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if var destination = segue.destination as? PersonProtocol {
+            destination.person = person
+        }
+        
+//        switch segue.identifier {
+//        case Segue.homeworld.rawValue:
+//            if let destination = segue.destination as? HomeworldVC {
+//                destination.person = person
+//            }
+//        case Segue.vehicles.rawValue:
+//            if let destination = segue.destination as? VehiclesVC {
+//                destination.person = person
+//            }
+//        case Segue.starships.rawValue:
+//            if let destination = segue.destination as? StarshipsVC {
+//                destination.person = person
+//            }
+//        case Segue.films.rawValue:
+//            if let destination = segue.destination as? FilmsVC {
+//                destination.person = person
+//            }
+//        default:
+//            break
+//        }
+//
     }
+//
+//    enum Segue: String {
+//        case homeworld = "toHomeworld"
+//        case vehicles = "toVehicles"
+//        case starships = "toStarships"
+//        case films = "toFilms"
+//    }
     
-    @IBAction func vehiclesButtonPressed(_ sender: Any) {
-    }
-    @IBAction func starshipsButtonPressed(_ sender: Any) {
-    }
-    
-    @IBAction func filmsButtonPressed(_ sender: Any) {
-    }
-    
-    
-    
+}
+
+protocol PersonProtocol {
+    var person: Person! {get set}
 }
 
