@@ -10,6 +10,18 @@ import UIKit
 
 class VehiclesVC: UIViewController, PersonProtocol {
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var modelLabel: UILabel!
+    @IBOutlet weak var manufacturerLabel: UILabel!
+    @IBOutlet weak var costLabel: UILabel!
+    @IBOutlet weak var lengthLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var crewLabel: UILabel!
+    @IBOutlet weak var passengersLabel: UILabel!
+    @IBOutlet weak var previousButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    
     var person: Person!
 
     override func viewDidLoad() {
@@ -17,5 +29,10 @@ class VehiclesVC: UIViewController, PersonProtocol {
         print(person.name)
     }
     
-
+    @IBAction func previousPressed(_ sender: Any) {
+    }
+    
+    @IBAction func nextPressed(_ sender: Any) {
+    }
+    
 }
