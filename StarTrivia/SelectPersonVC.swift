@@ -27,17 +27,26 @@ class SelectPersonVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    func setupView(person: Person) {
+        nameLabel.text = person.name
+        heightLabel.text = person.height
+        massLabel.text = person.mass
+        hairLabel.text = person.hair
+        birthYearLabel.text = person.birthYear
+        genderLabel.text = person.gender
+        
+        homeworldButton.isEnabled = !person.homeworldUrl.isEmpty
+        vehiclesButton.isEnabled = !person.vehicleUrls.isEmpty
+        starshipsButton.isEnabled = !person.starshipUrls.isEmpty
+        filmsButton.isEnabled = !person.filmUrls.isEmpty
+    }
 
     @IBAction func randomButtonPressed(_ sender: Any) {
         let random = Int.random(in: 1 ... 87)
         personApi.getRandomPerson(id: random) { (person) in
             if let person = person {
-                self.nameLabel.text = person.name
-                self.heightLabel.text = person.height
-                self.massLabel.text = person.mass
-                self.hairLabel.text = person.hair
-                self.birthYearLabel.text = person.birthYear
-                self.genderLabel.text = person.gender
+               self.setupView(person: person)
             }
         }
     }
