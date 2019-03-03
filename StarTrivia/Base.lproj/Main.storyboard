@@ -463,7 +463,7 @@
                                                         <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPw-0b-7KI">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pPw-0b-7KI">
                                                         <rect key="frame" x="66" y="0.0" width="268" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -483,7 +483,7 @@
                                                         <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlU-o5-NlJ">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DlU-o5-NlJ">
                                                         <rect key="frame" x="80" y="0.0" width="254" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -494,17 +494,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6A6-0X-62e">
                                                 <rect key="frame" x="0.0" y="69" width="334" height="27.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manufacturer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcT-Vt-aSo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="27.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maker:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcT-Vt-aSo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="27.5"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="153" id="8tg-6l-EN0"/>
+                                                            <constraint firstAttribute="width" constant="68.5" id="vxe-Nc-FD8"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fgu-8S-Vv7">
-                                                        <rect key="frame" x="163" y="0.0" width="171" height="27.5"/>
+                                                        <rect key="frame" x="78.5" y="0.0" width="255.5" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
