@@ -362,7 +362,7 @@
                                                         <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ee4-fs-V0a">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ee4-fs-V0a">
                                                         <rect key="frame" x="91.5" y="0.0" width="242.5" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -417,6 +417,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rk8-bT-YRZ"/>
                     </view>
+                    <connections>
+                        <outlet property="climateLabel" destination="nS4-HY-l5i" id="u95-Hg-Rpr"/>
+                        <outlet property="nameLabel" destination="hcP-p4-gaA" id="Z2Q-cp-0cu"/>
+                        <outlet property="populationLabel" destination="2ha-ku-lMf" id="quz-I8-l8S"/>
+                        <outlet property="terrainLabel" destination="Ee4-fs-V0a" id="Zvv-83-AbW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tX3-bT-bMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

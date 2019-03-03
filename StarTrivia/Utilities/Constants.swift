@@ -14,3 +14,4 @@ let BASE_URL = "https://swapi.co/api/"
 let PERSON_URL = "\(BASE_URL)people/"
 
 typealias PersonResponseCompletion = (Person?) -> ()
+typealias HomeworldResponseCompletion = (Homeworld?) -> ()

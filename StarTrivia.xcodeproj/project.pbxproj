@@ -13,6 +13,8 @@
 		4811B0DA222C650F00F49633 /* FilmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811B0D9222C650F00F49633 /* FilmsVC.swift */; };
 		4812D099222B2362000970E7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812D098222B2362000970E7 /* Person.swift */; };
 		48702E0D222C34DE0027FA64 /* FadeEnabledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48702E0C222C34DE0027FA64 /* FadeEnabledButton.swift */; };
+		489EEA5E222C79B700A59B85 /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489EEA5D222C79B700A59B85 /* Homeworld.swift */; };
+		489EEA60222C7A4B00A59B85 /* HomeworldApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489EEA5F222C7A4B00A59B85 /* HomeworldApi.swift */; };
 		48D6A36F222AFA8E00DF1DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D6A36E222AFA8E00DF1DC3 /* AppDelegate.swift */; };
 		48D6A371222AFA8E00DF1DC3 /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D6A370222AFA8E00DF1DC3 /* SelectPersonVC.swift */; };
 		48D6A374222AFA8E00DF1DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D6A372222AFA8E00DF1DC3 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		4811B0D9222C650F00F49633 /* FilmsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsVC.swift; sourceTree = "<group>"; };
 		4812D098222B2362000970E7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		48702E0C222C34DE0027FA64 /* FadeEnabledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeEnabledButton.swift; sourceTree = "<group>"; };
+		489EEA5D222C79B700A59B85 /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
+		489EEA5F222C7A4B00A59B85 /* HomeworldApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldApi.swift; sourceTree = "<group>"; };
 		48D6A36B222AFA8E00DF1DC3 /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D6A36E222AFA8E00DF1DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48D6A370222AFA8E00DF1DC3 /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				4812D098222B2362000970E7 /* Person.swift */,
+				489EEA5D222C79B700A59B85 /* Homeworld.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				48D6A391222B0C4C00DF1DC3 /* PersonApi.swift */,
+				489EEA5F222C7A4B00A59B85 /* HomeworldApi.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 				4812D099222B2362000970E7 /* Person.swift in Sources */,
 				48702E0D222C34DE0027FA64 /* FadeEnabledButton.swift in Sources */,
 				4811B0D8222C650400F49633 /* StarshipsVC.swift in Sources */,
+				489EEA5E222C79B700A59B85 /* Homeworld.swift in Sources */,
 				4811B0D6222C64F900F49633 /* VehiclesVC.swift in Sources */,
+				489EEA60222C7A4B00A59B85 /* HomeworldApi.swift in Sources */,
 				48D6A371222AFA8E00DF1DC3 /* SelectPersonVC.swift in Sources */,
 				48D6A38C222B036500DF1DC3 /* BlackBackgroundView.swift in Sources */,
 				48D6A36F222AFA8E00DF1DC3 /* AppDelegate.swift in Sources */,
