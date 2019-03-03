@@ -25,10 +25,13 @@ class VehiclesVC: UIViewController, PersonProtocol {
     var person: Person!
     let api = VehicleApi()
     var vehicles = [String]()
+    var currentVehicle = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         vehicles = person.vehicleUrls
+        previousButton.isEnabled = false
+        nextButton.isEnabled = vehicles.count > 1
         guard let firstVehicle = vehicles.first else { return }
         getVehicle(url: firstVehicle)
     }
@@ -53,9 +56,31 @@ class VehiclesVC: UIViewController, PersonProtocol {
     }
     
     @IBAction func previousPressed(_ sender: Any) {
+        currentVehicle -= 1
+        setButtonState()
     }
     
     @IBAction func nextPressed(_ sender: Any) {
+        currentVehicle += 1
+        setButtonState()
+    }
+    
+    func setButtonState() {
+        previousButton.isEnabled = currentVehicle == 0 ? false : true
+        nextButton.isEnabled = currentVehicle == vehicles.count - 1 ? false : true
+//        if currentVehicle == 0 {
+//            previousButton.isEnabled = false
+//        } else {
+//            previousButton.isEnabled = true
+//        }
+//
+//        if currentVehicle == vehicles.count - 1 {
+//            nextButton.isEnabled = false
+//        } else {
+//            nextButton.isEnabled = true
+//        }
+        
+        getVehicle(url: vehicles[currentVehicle])
     }
     
 }
