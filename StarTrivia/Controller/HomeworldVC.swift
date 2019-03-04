@@ -14,13 +14,16 @@ class HomeworldVC: UIViewController, PersonProtocol {
     @IBOutlet weak var climateLabel: UILabel!
     @IBOutlet weak var terrainLabel: UILabel!
     @IBOutlet weak var populationLabel: UILabel!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     var person: Person!
     let api = HomeworldApi()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        spinner.startAnimating()
         api.getHomeworld(url: person.homeworldUrl) { (homeworld) in
+            self.spinner.stopAnimating()
             if let homeworld = homeworld {
                 self.setupView(homeworld: homeworld)
             }

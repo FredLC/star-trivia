@@ -22,6 +22,7 @@ class StarshipsVC: UIViewController, PersonProtocol {
     @IBOutlet weak var hyperdriveLabel: UILabel!
     @IBOutlet weak var previousButton: FadeEnabledButton!
     @IBOutlet weak var nextButton: FadeEnabledButton!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     
     var person: Person!
@@ -31,6 +32,7 @@ class StarshipsVC: UIViewController, PersonProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        spinner.startAnimating()
         starships = person.starshipUrls
         previousButton.isEnabled = false
         nextButton.isEnabled = starships.count > 1
@@ -40,6 +42,7 @@ class StarshipsVC: UIViewController, PersonProtocol {
     
     func getStarship(url: String) {
         api.getStarship(url: url) { (starship) in
+            self.spinner.stopAnimating()
             if let starship = starship {
                 self.setupView(starship: starship)
             }

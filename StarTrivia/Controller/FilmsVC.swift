@@ -18,6 +18,7 @@ class FilmsVC: UIViewController, PersonProtocol {
     @IBOutlet weak var crawlLabel: UITextView!
     @IBOutlet weak var previousButton: FadeEnabledButton!
     @IBOutlet weak var nextButton: FadeEnabledButton!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     var person: Person!
     let api = FilmApi()
@@ -26,6 +27,7 @@ class FilmsVC: UIViewController, PersonProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        spinner.startAnimating()
         films = person.filmUrls
         previousButton.isEnabled = false
         nextButton.isEnabled = films.count > 1
@@ -35,6 +37,7 @@ class FilmsVC: UIViewController, PersonProtocol {
     
     func getFilm(url: String) {
         api.getFilm(url: url) { (film) in
+            self.spinner.stopAnimating()
             if let film = film {
                 self.setupView(film: film)
             }

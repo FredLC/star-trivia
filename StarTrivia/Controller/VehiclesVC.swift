@@ -20,6 +20,7 @@ class VehiclesVC: UIViewController, PersonProtocol {
     @IBOutlet weak var passengersLabel: UILabel!
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     
     var person: Person!
@@ -29,6 +30,7 @@ class VehiclesVC: UIViewController, PersonProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        spinner.startAnimating()
         vehicles = person.vehicleUrls
         previousButton.isEnabled = false
         nextButton.isEnabled = vehicles.count > 1
@@ -38,6 +40,7 @@ class VehiclesVC: UIViewController, PersonProtocol {
     
     func getVehicle(url: String) {
         api.getVehicle(url: url) { (vehicle) in
+            self.spinner.stopAnimating()
             if let vehicle = vehicle {
                 self.setupView(vehicle: vehicle)
             }
