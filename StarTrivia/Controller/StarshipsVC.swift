@@ -34,7 +34,8 @@ class StarshipsVC: UIViewController, PersonProtocol {
         starships = person.starshipUrls
         previousButton.isEnabled = false
         nextButton.isEnabled = starships.count > 1
-        getStarship(url: starships[0])
+        guard let firstStarship = starships.first else { return }
+        getStarship(url: firstStarship)
     }
     
     func getStarship(url: String) {

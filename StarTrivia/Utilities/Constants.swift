@@ -17,4 +17,5 @@ typealias PersonResponseCompletion = (Person?) -> ()
 typealias HomeworldResponseCompletion = (Homeworld?) -> ()
 typealias VehicleResponseCompletion = (Vehicle?) -> ()
 typealias StarshipResponseCompletion = (Starship?) -> ()
+typealias FilmResponseCompletion = (Film?) -> ()
 
